@@ -1,0 +1,22 @@
+{
+    "name": "xraffsarr/php-exifer",
+    "description": "Php Exif reader and writer",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Xraffsarr\\PhpExifer\\": "Exifer/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raffaele Sarracino",
+            "email": "contacts@raffaelesarracinno.it",
+            "homepage": "https://raffaelesarracino.it",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {}
+}
