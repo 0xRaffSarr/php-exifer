@@ -18,5 +18,7 @@
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require": {}
+    "require": {
+        "php" : ">= 7.4"
+    }
 }
