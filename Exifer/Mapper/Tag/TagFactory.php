@@ -12,6 +12,7 @@ namespace Xraffsarr\PhpExifer\Mapper\Tag;
 
 use Xraffsarr\PhpExifer\Exception\TagNotFound;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\ColorSpace;
+use Xraffsarr\PhpExifer\Mapper\Tag\Common\ExposureMode;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\ExposureProgram;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\Flash;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\LightSource;
@@ -35,7 +36,8 @@ abstract class TagFactory
         'ResolutionUnit' => ResolutionUnit::class,
         'YCbCrPositioning' => YCbCrPositioning::class,
         'ColorSpace' => ColorSpace::class,
-        'SensingMethod' => SensingMethod::class
+        'SensingMethod' => SensingMethod::class,
+        'ExposureMode' => ExposureMode::class
     ];
 
     /**
