@@ -14,6 +14,7 @@ use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ColorSpace;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ExposureMode;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ExposureProgram;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\Flash;
+use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\LensInfo;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\LightSource;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\Orientation;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ResolutionUnit;
@@ -38,7 +39,8 @@ abstract class IdMap
         SceneCaptureType::ID => SceneCaptureType::NAME,
         SensingMethod::ID => SensingMethod::NAME,
         WhiteBalance::ID => WhiteBalance::NAME,
-        YCbCrPositioning::ID => YCbCrPositioning::NAME
+        YCbCrPositioning::ID => YCbCrPositioning::NAME,
+        LensInfo::ID => LensInfo::NAME
     ];
 
     /**
