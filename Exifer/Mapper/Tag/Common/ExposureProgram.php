@@ -1,6 +1,6 @@
 <?php
 /**
- * PHP Exifer Tag ExposureProgram: Defines Orientation Tag.
+ * PHP Exifer Tag ExposureProgram: Defines ExposureProgram Tag.
  *
  * @link  https://github.com/0xRaffSarr/php-exifer
  * @see https://exiftool.org/TagNames/EXIF.html
