@@ -20,6 +20,7 @@ use Xraffsarr\PhpExifer\Mapper\Tag\Common\MeteringMode;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\Orientation;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\ResolutionUnit;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\SensingMethod;
+use Xraffsarr\PhpExifer\Mapper\Tag\Common\WhiteBalance;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\YCbCrPositioning;
 
 abstract class TagFactory
@@ -37,7 +38,8 @@ abstract class TagFactory
         'YCbCrPositioning' => YCbCrPositioning::class,
         'ColorSpace' => ColorSpace::class,
         'SensingMethod' => SensingMethod::class,
-        'ExposureMode' => ExposureMode::class
+        'ExposureMode' => ExposureMode::class,
+        'WhiteBalance' => WhiteBalance::class
     ];
 
     /**
