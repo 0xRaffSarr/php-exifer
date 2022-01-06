@@ -7,6 +7,7 @@
  * @license https://github.com/0xRaffSarr/php-exifer/blob/main/LICENSE
  * @package Tag
  */
+
 namespace Xraffsarr\PhpExifer\Mapper\Tag;
 
 /**
@@ -23,14 +24,14 @@ abstract class Tag implements TagInterface
      *
      * @var string
      */
-    protected string $name;
+    const NAME = null;
 
     /**
      * Section name - must override in subclass
      *
      * @var string
      */
-    protected string $section;
+    const SECTION = null;
 
     /**
      * Tab value type - must override in subclass
@@ -44,7 +45,7 @@ abstract class Tag implements TagInterface
      *
      * @var bool
      */
-    protected bool $isWritable;
+    const IS_WRITABLE = false;
 
     /**
      * Current tag value
@@ -67,7 +68,7 @@ abstract class Tag implements TagInterface
      */
     public function getName(): string
     {
-        return $this->name;
+        return static::NAME;
     }
 
     /**
@@ -77,7 +78,7 @@ abstract class Tag implements TagInterface
      */
     public function getSection(): string
     {
-        return $this->section;
+        return static::SECTION;
     }
 
     /**
@@ -87,7 +88,7 @@ abstract class Tag implements TagInterface
      */
     public function isWritable(): bool
     {
-        return $this->isWritable;
+        return static::IS_WRITABLE;
     }
 
     /**

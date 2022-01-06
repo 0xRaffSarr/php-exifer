@@ -11,63 +11,60 @@
 namespace Xraffsarr\PhpExifer\Mapper\Tag;
 
 use Xraffsarr\PhpExifer\Exception\TagNotFound;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\ColorSpace;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\ExposureMode;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\ExposureProgram;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\Flash;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\LightSource;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\MeteringMode;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\Orientation;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\ResolutionUnit;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\SceneCaptureType;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\SensingMethod;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\WhiteBalance;
-use Xraffsarr\PhpExifer\Mapper\Tag\Common\YCbCrPositioning;
 
 abstract class TagFactory
 {
     /**
      * Tag list
      */
-    private const TAGS = [
-        'ExposureProgram' => ExposureProgram::class,
-        'Flash' => Flash::class,
-        'LightSource' => LightSource::class,
-        'MeteringMode' => MeteringMode::class,
-        'Orientation' => Orientation::class,
-        'ResolutionUnit' => ResolutionUnit::class,
-        'YCbCrPositioning' => YCbCrPositioning::class,
-        'ColorSpace' => ColorSpace::class,
-        'SensingMethod' => SensingMethod::class,
-        'ExposureMode' => ExposureMode::class,
-        'WhiteBalance' => WhiteBalance::class,
-        'SceneCaptureType' => SceneCaptureType::class
+    private const NAMESPACES = [
+        'common' => __NAMESPACE__.'\\Tags\\Common\\'
+    ];
+
+    private const ID_TAGS = [
+
     ];
 
     /**
      * Return a tag class from tag name
      *
      * @param string $tagName
-     * @return TagInterface
+     * @param string|null $manufacture
+     * @return Tag
      * @throws TagNotFound
+     * @throws \ReflectionException
      */
-    public static function getTagClass(string $tagName): TagInterface
+    public static function getTagClass(string $tag, string $manufacture = null): Tag
     {
-        if(!self::checkTagObject($tagName)) {
-            throw new TagNotFound($tagName.' not found');
+
+        //check if is a tag id
+        if(!is_null(IdMap::getTag($tag))) {
+            $tag = IdMap::getTag($tag);
         }
 
-        return new self::TAGS[$tagName];
+        if(self::checkTagObject(self::NAMESPACES['common'].$tag)) {
+            $namespace = self::NAMESPACES['common'];
+        }
+        elseif (!is_null($manufacture) && isset(self::NAMESPACES[$manufacture]) && self::checkTagObject(self::NAMESPACES[$manufacture].$tag)) {
+            $namespace = self::NAMESPACES[$manufacture];
+        }
+        else {
+            throw new TagNotFound($tag.' not found.');
+        }
+
+        $class = new \ReflectionClass($namespace.$tag);
+
+        return $class->newInstance();
     }
 
     /**
      * Check if exists tag object
      *
-     * @param string $tagName
+     * @param string $class
      * @return bool
      */
-    public static function checkTagObject(string $tagName): bool
+    public static function checkTagObject(string $class): bool
     {
-        return in_array($tagName, array_keys(self::TAGS));
+        return class_exists($class);
     }
 }
