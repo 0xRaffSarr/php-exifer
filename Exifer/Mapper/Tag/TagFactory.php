@@ -19,6 +19,7 @@ use Xraffsarr\PhpExifer\Mapper\Tag\Common\LightSource;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\MeteringMode;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\Orientation;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\ResolutionUnit;
+use Xraffsarr\PhpExifer\Mapper\Tag\Common\SceneCaptureType;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\SensingMethod;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\WhiteBalance;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\YCbCrPositioning;
@@ -39,7 +40,8 @@ abstract class TagFactory
         'ColorSpace' => ColorSpace::class,
         'SensingMethod' => SensingMethod::class,
         'ExposureMode' => ExposureMode::class,
-        'WhiteBalance' => WhiteBalance::class
+        'WhiteBalance' => WhiteBalance::class,
+        'SceneCaptureType' => SceneCaptureType::class
     ];
 
     /**
