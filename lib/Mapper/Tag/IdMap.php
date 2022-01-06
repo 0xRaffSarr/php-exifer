@@ -15,8 +15,12 @@ use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ExposureMode;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ExposureProgram;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\Flash;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\LensInfo;
+use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\LensMake;
+use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\LensModel;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\LightSource;
+use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\OffsetSchema;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\Orientation;
+use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\Padding;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ResolutionUnit;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\SceneCaptureType;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\SensingMethod;
@@ -40,7 +44,11 @@ abstract class IdMap
         SensingMethod::ID => SensingMethod::NAME,
         WhiteBalance::ID => WhiteBalance::NAME,
         YCbCrPositioning::ID => YCbCrPositioning::NAME,
-        LensInfo::ID => LensInfo::NAME
+        LensInfo::ID => LensInfo::NAME,
+        LensMake::ID => LensMake::NAME,
+        LensModel::ID => LensModel::NAME,
+        Padding::ID => Padding::NAME,
+        OffsetSchema::ID => OffsetSchema::NAME
     ];
 
     /**
