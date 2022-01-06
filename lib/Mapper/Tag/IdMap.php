@@ -11,6 +11,7 @@
 namespace Xraffsarr\PhpExifer\Mapper\Tag;
 
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ColorSpace;
+use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\CompositeImage;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ExposureMode;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\ExposureProgram;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common\Flash;
@@ -48,7 +49,8 @@ abstract class IdMap
         LensMake::ID => LensMake::NAME,
         LensModel::ID => LensModel::NAME,
         Padding::ID => Padding::NAME,
-        OffsetSchema::ID => OffsetSchema::NAME
+        OffsetSchema::ID => OffsetSchema::NAME,
+        CompositeImage::ID => CompositeImage::NAME
     ];
 
     /**
