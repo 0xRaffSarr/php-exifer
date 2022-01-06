@@ -19,7 +19,7 @@ class Padding extends Tag
 {
     const ID = '0xea1c';
 
-    const NAME = 'LensModel';
+    const NAME = 'Padding';
     const SECTION = MapperAbstract::SECTION_EXIF;
 
     /**
