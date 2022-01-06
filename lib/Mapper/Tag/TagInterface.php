@@ -66,7 +66,7 @@ interface TagInterface
      *
      * @return string
      */
-    public function getValueDescription(): string;
+    public function getValueDescription(): ?string;
 
     /**
      * Tag description
