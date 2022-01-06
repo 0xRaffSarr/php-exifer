@@ -18,6 +18,7 @@ use Xraffsarr\PhpExifer\Mapper\Tag\Common\LightSource;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\MeteringMode;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\Orientation;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\ResolutionUnit;
+use Xraffsarr\PhpExifer\Mapper\Tag\Common\SensingMethod;
 use Xraffsarr\PhpExifer\Mapper\Tag\Common\YCbCrPositioning;
 
 abstract class TagFactory
@@ -33,7 +34,8 @@ abstract class TagFactory
         'Orientation' => Orientation::class,
         'ResolutionUnit' => ResolutionUnit::class,
         'YCbCrPositioning' => YCbCrPositioning::class,
-        'ColorSpace' => ColorSpace::class
+        'ColorSpace' => ColorSpace::class,
+        'SensingMethod' => SensingMethod::class
     ];
 
     /**
