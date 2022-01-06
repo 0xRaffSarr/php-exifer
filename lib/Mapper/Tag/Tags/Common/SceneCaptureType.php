@@ -1,41 +1,40 @@
 <?php
-/**
- * PHP Exifer Tag WhiteBalance: Defines WhiteBalance Tag.
+/*
+ * Copyright (c) 2022. Raffaele Sarracino <contacts@raffaelesarracino.it>
  *
- * @link  https://github.com/0xRaffSarr/php-exifer
- * @see https://exiftool.org/TagNames/EXIF.html
- * @copyright Copyright (c) 2022. Raffaele Sarracino <contacts@raffaelesarracino.it>
- * @license https://github.com/0xRaffSarr/php-exifer/blob/main/LICENSE
- * @package Tag
+ *
  */
 
-namespace Xraffsarr\PhpExifer\Mapper\Tag\Common;
+namespace Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common;
 
 use Xraffsarr\PhpExifer\Exception\InvalidDataException;
 use Xraffsarr\PhpExifer\Mapper\MapperAbstract;
 use Xraffsarr\PhpExifer\Mapper\Tag\Tag;
 
-class WhiteBalance extends Tag
+class SceneCaptureType extends Tag
 {
     /**
      * Tag Id
      */
-    const ID = '0xa403';
+    const ID = '0xa406';
 
-    protected string $name = 'WhiteBalance';
+    protected string $name = 'SceneCaptureType';
     protected string $section = MapperAbstract::SECTION_EXIF;
     protected bool $isWritable = true;
 
     /**
-     * WhiteBalance Tag value description
+     * SceneCaptureType Tag value description
      *
      * @see https://exiftool.org/TagNames/EXIF.html
      *
      * @var array|string[]
      */
     protected array $valueDescription = [
-        0 => 'Auto',
-        1 => 'Manual'
+        0 => 'Standard',
+        1 => 'Landscape',
+        2 => 'Portrait',
+        3 => 'Night',
+        4 => 'Other'
     ];
 
     /**
@@ -45,7 +44,7 @@ class WhiteBalance extends Tag
     public function setValue($value)
     {
         if(!in_array($value, array_keys($this->valueDescription))) {
-            throw new InvalidDataException('Invalid WhiteBalance value.');
+            throw new InvalidDataException('Invalid SceneCaptureType value.');
         }
 
         $this->value = $value;

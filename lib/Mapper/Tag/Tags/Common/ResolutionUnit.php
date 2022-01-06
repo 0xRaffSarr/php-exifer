@@ -1,15 +1,11 @@
 <?php
-/**
- * PHP Exifer Tag ResolutionUnit: Defines ResolutionUnit Tag.
+/*
+ * Copyright (c) 2022. Raffaele Sarracino <contacts@raffaelesarracino.it>
  *
- * @link  https://github.com/0xRaffSarr/php-exifer
- * @see https://exiftool.org/TagNames/EXIF.html
- * @copyright Copyright (c) 2022. Raffaele Sarracino <contacts@raffaelesarracino.it>
- * @license https://github.com/0xRaffSarr/php-exifer/blob/main/LICENSE
- * @package Tag
+ *
  */
 
-namespace Xraffsarr\PhpExifer\Mapper\Tag\Common;
+namespace Xraffsarr\PhpExifer\Mapper\Tag\Tags\Common;
 
 use Xraffsarr\PhpExifer\Exception\InvalidDataException;
 use Xraffsarr\PhpExifer\Mapper\MapperAbstract;
