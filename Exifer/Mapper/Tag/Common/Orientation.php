@@ -36,7 +36,7 @@ class Orientation extends TagAbstract
      *
      * @var array|string[]
      */
-    private array $valueDescription = [
+    protected array $valueDescription = [
         1 => 'Horizontal (normal)',
         2 => 'Mirror horizontal',
         3 => 'Rotate 180',

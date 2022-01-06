@@ -36,7 +36,7 @@ class ResolutionUnit extends TagAbstract
      *
      * @var array|string[]
      */
-    private array $valueDescription = [
+    protected array $valueDescription = [
         1 => 'none',
         2 => 'inches',
         3 => 'cm'

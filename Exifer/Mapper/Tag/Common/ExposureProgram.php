@@ -29,7 +29,7 @@ class ExposureProgram extends TagAbstract
      *
      * @var array|string[]
      */
-    private array $valueDescription = [
+    protected array $valueDescription = [
         0 => 'Not Defined',
         1 => 'Manual',
         2 => 'Program AE',

@@ -29,7 +29,7 @@ class YCbCrPositioning extends TagAbstract
      *
      * @var array|string[]
      */
-    private array $valueDescription = [
+    protected array $valueDescription = [
         1 => 'Centered',
         2 => 'Co-sited'
     ];

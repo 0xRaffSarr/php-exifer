@@ -28,7 +28,7 @@ class MeteringMode extends TagAbstract
      *
      * @var array|string[]
      */
-    private array $valueDescription = [
+    protected array $valueDescription = [
         0 => 'Unknown',
         1 => 'Average',
         2 => 'Center-weighted average',

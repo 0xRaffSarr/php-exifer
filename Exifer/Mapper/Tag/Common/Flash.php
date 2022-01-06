@@ -26,7 +26,7 @@ class Flash extends TagAbstract
      *
      * @var array|string[]
      */
-    private array $valueDescription = [
+    protected array $valueDescription = [
         '0x0' => 'No Flash',
         '0x1' => 'Fired',
         '0x5' => 'Fired, Return not detected',
