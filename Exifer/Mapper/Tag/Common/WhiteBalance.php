@@ -17,6 +17,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class WhiteBalance extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0xa403';
 
     protected string $name = 'WhiteBalance';
     protected string $section = MapperAbstract::SECTION_EXIF;

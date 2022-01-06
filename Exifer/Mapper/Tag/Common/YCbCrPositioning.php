@@ -17,6 +17,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class YCbCrPositioning extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0x0213';
 
     protected string $name = 'YCbCrPositioning';
     protected string $section = MapperAbstract::SECTION_IFD0;

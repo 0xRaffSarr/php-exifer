@@ -16,6 +16,11 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class Flash extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0x9209';
+
     protected string $name = 'Flash';
     protected string $section = MapperAbstract::SECTION_EXIF;
     protected bool $isWritable = true;

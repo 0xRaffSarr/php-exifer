@@ -24,6 +24,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
  */
 class ResolutionUnit extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0x0128';
 
     protected string $name = 'ResolutionUnit';
     protected string $section = MapperAbstract::SECTION_IFD0;

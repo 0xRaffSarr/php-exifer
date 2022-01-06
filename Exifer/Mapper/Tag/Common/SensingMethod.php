@@ -17,6 +17,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class SensingMethod extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0xa217';
 
     protected string $name = 'SensingMethod';
     protected string $section = MapperAbstract::SECTION_EXIF;

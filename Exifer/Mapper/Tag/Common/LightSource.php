@@ -17,6 +17,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class LightSource extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0x9208';
 
     protected string $name = 'LightSource';
     protected string $section = MapperAbstract::SECTION_EXIF;

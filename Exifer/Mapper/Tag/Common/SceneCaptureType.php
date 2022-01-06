@@ -17,6 +17,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class SceneCaptureType extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0xa406';
 
     protected string $name = 'SceneCaptureType';
     protected string $section = MapperAbstract::SECTION_EXIF;

@@ -16,6 +16,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class ColorSpace extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0xc71a';
 
     protected string $name = 'ColorSpace';
     protected string $section = MapperAbstract::SECTION_EXIF;

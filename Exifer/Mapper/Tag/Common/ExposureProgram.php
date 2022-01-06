@@ -17,6 +17,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class ExposureProgram extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0x8822';
 
     protected string $name = 'ExposureProgram';
     protected string $section = MapperAbstract::SECTION_EXIF;

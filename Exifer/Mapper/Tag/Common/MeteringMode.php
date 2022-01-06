@@ -17,6 +17,11 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
 
 class MeteringMode extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0x9207';
+
     protected string $name = 'MeteringMode';
     protected string $section = MapperAbstract::SECTION_EXIF;
     protected bool $isWritable = true;

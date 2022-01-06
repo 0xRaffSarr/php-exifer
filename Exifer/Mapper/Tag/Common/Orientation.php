@@ -24,6 +24,10 @@ use Xraffsarr\PhpExifer\Mapper\Tag\TagAbstract;
  */
 class Orientation extends TagAbstract
 {
+    /**
+     * Tag Id
+     */
+    const ID = '0x0112';
 
     protected string $name = 'Orientation';
     protected string $section = MapperAbstract::SECTION_IFD0;
