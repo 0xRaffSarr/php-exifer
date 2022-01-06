@@ -38,14 +38,26 @@ abstract class TagFactory
      * Return a tag class from tag name
      *
      * @param string $tagName
-     * @return mixed
+     * @return TagInterface
      * @throws TagNotFound
      */
-    public static function getTagClass(string $tagName) {
-        if(!in_array($tagName, array_keys(self::TAGS))) {
+    public static function getTagClass(string $tagName): TagInterface
+    {
+        if(!self::checkTagObject($tagName)) {
             throw new TagNotFound($tagName.' not found');
         }
 
         return new self::TAGS[$tagName];
+    }
+
+    /**
+     * Check if exists tag object
+     *
+     * @param string $tagName
+     * @return bool
+     */
+    public static function checkTagObject(string $tagName): bool
+    {
+        return in_array($tagName, array_keys(self::TAGS));
     }
 }
