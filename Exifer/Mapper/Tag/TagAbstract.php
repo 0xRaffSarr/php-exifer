@@ -45,7 +45,20 @@ abstract class TagAbstract implements TagInterface
      * @var bool
      */
     protected bool $isWritable;
+
+    /**
+     * Current tag value
+     *
+     * @var
+     */
     protected $value;
+
+    /**
+     * Possible tag values description
+     *
+     * @var array
+     */
+    protected array $valueDescription = [];
 
     /**
      * Get tag name
