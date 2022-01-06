@@ -18,9 +18,9 @@ class ExposureProgram extends Tag
      */
     const ID = '0x8822';
 
-    protected string $name = 'ExposureProgram';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'ExposureProgram';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     /**
      * ExposureProgram Tag value description

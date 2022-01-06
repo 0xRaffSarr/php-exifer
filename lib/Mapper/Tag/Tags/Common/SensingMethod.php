@@ -18,9 +18,9 @@ class SensingMethod extends Tag
      */
     const ID = '0xa217';
 
-    protected string $name = 'SensingMethod';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'SensingMethod';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     protected array $valueDescription = [
         1 => 'Not defined',

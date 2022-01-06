@@ -18,9 +18,9 @@ class SceneCaptureType extends Tag
      */
     const ID = '0xa406';
 
-    protected string $name = 'SceneCaptureType';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'SceneCaptureType';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     /**
      * SceneCaptureType Tag value description

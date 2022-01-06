@@ -18,9 +18,9 @@ class ExposureMode extends Tag
      */
     const ID = '0xa402';
 
-    protected string $name = 'ExposureMode';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'ExposureMode';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     /**
      * ExposureMode Tag value description

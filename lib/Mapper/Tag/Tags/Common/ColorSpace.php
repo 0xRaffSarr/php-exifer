@@ -17,9 +17,10 @@ class ColorSpace extends Tag
      */
     const ID = '0xc71a';
 
-    protected string $name = 'ColorSpace';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'ColorSpace';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    
+    const IS_WRITABLE = true;
 
     /**
      * ColorSpace Tag value description

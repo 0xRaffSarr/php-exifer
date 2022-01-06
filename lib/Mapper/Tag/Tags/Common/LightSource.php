@@ -18,9 +18,9 @@ class LightSource extends Tag
      */
     const ID = '0x9208';
 
-    protected string $name = 'LightSource';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'LightSource';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     /**
      * LightSource description value in hex

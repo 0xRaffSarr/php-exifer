@@ -18,9 +18,9 @@ class YCbCrPositioning extends Tag
      */
     const ID = '0x0213';
 
-    protected string $name = 'YCbCrPositioning';
-    protected string $section = MapperAbstract::SECTION_IFD0;
-    protected bool $isWritable = true;
+    const NAME = 'YCbCrPositioning';
+    const SECTION = MapperAbstract::SECTION_IFD0;
+    const IS_WRITABLE = true;
 
     /**
      * YCbCrPositioning Tag value description

@@ -17,9 +17,9 @@ class Flash extends Tag
      */
     const ID = '0x9209';
 
-    protected string $name = 'Flash';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'Flash';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     /**
      * Flash description value in hex

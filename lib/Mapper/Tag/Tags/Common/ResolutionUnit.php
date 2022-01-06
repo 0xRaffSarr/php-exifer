@@ -25,9 +25,9 @@ class ResolutionUnit extends Tag
      */
     const ID = '0x0128';
 
-    protected string $name = 'ResolutionUnit';
-    protected string $section = MapperAbstract::SECTION_IFD0;
-    protected bool $isWritable = true;
+    const NAME = 'ResolutionUnit';
+    const SECTION = MapperAbstract::SECTION_IFD0;
+    const IS_WRITABLE = true;
 
     /**
      * ResolutionUnit Tag value description

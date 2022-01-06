@@ -25,9 +25,9 @@ class Orientation extends Tag
      */
     const ID = '0x0112';
 
-    protected string $name = 'Orientation';
-    protected string $section = MapperAbstract::SECTION_IFD0;
-    protected bool $isWritable = true;
+    const NAME = 'Orientation';
+    const SECTION = MapperAbstract::SECTION_IFD0;
+    const IS_WRITABLE = true;
 
     /**
      * Orientation Tag value description

@@ -18,9 +18,9 @@ class MeteringMode extends Tag
      */
     const ID = '0x9207';
 
-    protected string $name = 'MeteringMode';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'MeteringMode';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     /**
      * MeteringMode Tag value description

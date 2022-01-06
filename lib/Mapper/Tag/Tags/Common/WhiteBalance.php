@@ -18,9 +18,9 @@ class WhiteBalance extends Tag
      */
     const ID = '0xa403';
 
-    protected string $name = 'WhiteBalance';
-    protected string $section = MapperAbstract::SECTION_EXIF;
-    protected bool $isWritable = true;
+    const NAME = 'WhiteBalance';
+    const SECTION = MapperAbstract::SECTION_EXIF;
+    const IS_WRITABLE = true;
 
     /**
      * WhiteBalance Tag value description
