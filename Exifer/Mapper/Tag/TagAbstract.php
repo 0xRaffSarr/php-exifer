@@ -86,4 +86,14 @@ abstract class TagAbstract implements TagInterface
     {
         return $this->type;
     }
+
+    /**
+     * Get tag value
+     *
+     * @return mixed
+     */
+    public function getValue()
+    {
+        return $this->value;
+    }
 }

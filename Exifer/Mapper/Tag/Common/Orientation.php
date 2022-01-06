@@ -47,11 +47,6 @@ class Orientation extends TagAbstract
         8 => 'Rotate 270 CW',
     ];
 
-    public function getValue()
-    {
-        return $this->value;
-    }
-
     /**
      * @param $value
      * @throws InvalidDataException
