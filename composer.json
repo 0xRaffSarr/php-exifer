@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Xraffsarr\\PhpExifer\\": "Exifer/"
+            "Xraffsarr\\PhpExifer\\": "lib/"
         }
     },
     "authors": [
